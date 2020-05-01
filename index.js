@@ -9,12 +9,8 @@ var numAarray = confirm("Do you want it to include numbers?");
 var specialArray = confirm("Do you want it to include special characters?");
 
 
-if goGenerate = true {
+goGenerate() = true 
     var UpperArray = confirm("Do you want it to include uppercase letters")
-
-}
-
-
 
 // randomizing code block
 
@@ -28,9 +24,4 @@ function generatePassword ()
 {
     var final_word = "";
     var endArray = concat_arrays
-    for(var i=0; i < length; i++)
-    {
-    final_word <= concat_arrays.charAt(Math.floor((Math.random() * concat_arrays.length))}
-return final_word;
-}
-    console.log(generatePassword(lengthNum));
+    for(var i=0; i < length; i++); }
