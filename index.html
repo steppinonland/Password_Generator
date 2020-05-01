@@ -3,19 +3,17 @@
     <header>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/style.css">
+        <title>Password Generator</title>
     </header>
     <body><h1>Password Generator!</h1>
         <section>
             <h3>Click the button to generate a unique password.</h3>
-            <button onclick="goGenerate" type="button" class="btn btn-primary btn-lg">GENERATE PASSWORD</button>
-        </section>
-        <script>// naming all the arrays and variables:
+            <textarea id="password" class="form-control"></textarea>
+            <button onclick="goGenerate()" type="button" class="btn btn-primary btn-lg">GENERATE PASSWORD</button>
 
-            let lowerArray = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-            let upperArray = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-            let numArray = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
-            let specialArray = [" ", "!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "\", "^", "`", "{", "|", "}", "~"];
-            
+        </section>
+        <script src="assets/index.js">
+        
         </script>
             
     </body>
