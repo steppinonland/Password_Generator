@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
-    <header>
+    <head>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/style.css">
         <title>Password Generator</title>
-    </header>
+    </head>
     <body><h1>Password Generator!</h1>
         <section>
             <h3>Click the button to generate a unique password.</h3>
-            <textarea id="password" class="form-control"></textarea>
-            <button onclick="goGenerate()" type="button" class="btn btn-primary btn-lg">GENERATE PASSWORD</button>
+            <textarea class="form-control"><input type="text" id = "finalWord" />
+            </textarea>
+            <button onclick="generatePassword()" type="button" class="btn btn-primary btn-lg">GENERATE PASSWORD</button>
 
         </section>
         <script src="assets/index.js">
