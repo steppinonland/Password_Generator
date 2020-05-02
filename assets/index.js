@@ -1,14 +1,8 @@
-function getRand(arr) {
-	var randInd = Math.floor(Math.random() * arr.length);
-	var randEl = arr[randInd];
-	return randEl;
-}
+
 // first step: click button > confirm box 1 > confirm box ; ELSE close window
 
 
 
-var endArray = [];
-let finalWord = [];
 //  naming all the arrays and variables:
 /*
             const lowerArray = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
@@ -31,15 +25,24 @@ function generatePassword () {
     var allowLowerArray = confirm("Do you want it to contain lowercase letters?");
     var allowNumAarray = confirm("Do you want it to include numbers?");
     var allowSpecialArray = confirm("Do you want it to include special characters?");*/
-    var wordLength = prompt("How long would you like the password to be? Enter in a number between 8 and 120.")
+    let wordLength = prompt("How long would you like the password to be? Enter in a number between 8 and 120.").value;
+    let endArray = [];
+    let finalWord = "";
+
 
     if (allowUpperArray) {
         upperArray.forEach((letter) => {
             endArray.push(letter);
         })
     }
+    for (var i = 0 ; i <= wordLength; i++) {
+        finalWord = finalWord + endArray.charAt(Math.floor(Math.random() * Math.floor(endArray.length - 1)));
+     }
 
+     document.getElementById("passwordDisplay").value=finalWord;
+    }
 
+ 
 
 
 
@@ -66,17 +69,18 @@ if (allowSpecialArray){
     }
 }*/
 // the entry for word length must be between 8 and 120 characters
-    if (wordLength < 8 || wordLength > 120);
+    /*if (wordLength < 8 || wordLength > 120);
         alert("Pick a different number. Must be between 8 and 120.")
     }
+    else - const wordLength = finalWord.length
+  
     for (var i = 0 ; i <= wordLength; i++) {
         var finalLength = getRand(endArray);
         finalWord.push(finalLength);
-     }
-    
+        return String.endArray
+     }  */
      console.log(generatePassword);
 
-     document.getElementById("finalWord").value=finalWord;
 // randomizing code block
 
 // the final password will be generated from a new array, based on the chosen criteria
