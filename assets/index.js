@@ -24,8 +24,8 @@ function generatePassword () {
     var allowLowerArray = confirm("Do you want it to contain lowercase letters?");
 
 
-    var wordLength = parseInt(prompt("How long would you like the password to be? Enter in a number between 8 and 120."));
-    if (wordLength <= 8 && wordLength >= 120)
+    var wordLength = (parseInt(prompt("How long would you like the password to be? Enter in a number between 8 and 120.")) - 1);
+    if (wordLength <= 8 || wordLength >= 120)
     {
         alert("Try a different number. Must enter a number between 8 and 120.");
     }
@@ -47,7 +47,7 @@ function generatePassword () {
 
 
     for (var i = 0 ; i <= wordLength; i++) {
-        var randomIndex = 1 + (Math.floor((Math.random() * endArray.length - 1)));
+        var randomIndex = (Math.floor((Math.random() * endArray.length)));
         finalWord = finalWord + endArray[randomIndex];
     }
     console.log(randomIndex);
