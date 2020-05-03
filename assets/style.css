@@ -1,0 +1,19 @@
+body {
+    background-color: peachpuff;
+}
+
+h1 {
+    padding-top: 4%;
+    text-align: center;
+    border-bottom-style: dotted;
+    border-bottom-color: lightcyan;
+    border-bottom-width: thick;
+}
+
+h3 {
+    margin-top: 3%;
+}
+
+button {
+    margin: 3%;
+}
