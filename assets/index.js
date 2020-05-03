@@ -1,17 +1,10 @@
-function getRand(arr) {
-	var randInd = Math.floor(Math.random() * arr.length);
-	var randEl = arr[randInd];
-	return randEl;
-}
+
 // first step: click button > confirm box 1 > confirm box ; ELSE close window
 
 
 
-var endArray = [];
-let finalWord = [];
 //  naming all the arrays and variables:
 /*
-            const lowerArray = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
             const numArray = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
             const specialArray = [" ", "!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "\", "^", "`", "{", "|", "}", "~"];
             *
@@ -25,21 +18,49 @@ function goGenerate() {
 
 function generatePassword () {
     const upperArray = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+    const lowerArray = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
     var goGenerate = confirm("Do you want to generate a password?");
     var allowUpperArray = confirm("Do you want it to contain uppercase letters?");
-    /*
     var allowLowerArray = confirm("Do you want it to contain lowercase letters?");
-    var allowNumAarray = confirm("Do you want it to include numbers?");
-    var allowSpecialArray = confirm("Do you want it to include special characters?");*/
-    var wordLength = prompt("How long would you like the password to be? Enter in a number between 8 and 120.")
 
+
+    var wordLength = parseInt(prompt("How long would you like the password to be? Enter in a number between 8 and 120."));
+    if (wordLength <= 8 && wordLength >= 120)
+    {
+        alert("Try a different number. Must enter a number between 8 and 120.");
+    }
+    
+    var endArray = [];
     if (allowUpperArray) {
         upperArray.forEach((letter) => {
             endArray.push(letter);
         })
     }
+    if (allowLowerArray) {
+        lowerArray.forEach((letter) => {
+            endArray.push(letter);
+        })
+    }
+
+    let finalWord = "";
 
 
+
+    for (var i = 0 ; i <= wordLength; i++) {
+        var randomIndex = 1 + (Math.floor((Math.random() * endArray.length - 1)));
+        finalWord = finalWord + endArray[randomIndex];
+    }
+    console.log(randomIndex);
+    // console.log(endArray[randomIndex]);
+
+    document.getElementById("passwordDisplay").value=finalWord;
+}
+    /*
+    var allowNumAarray = confirm("Do you want it to include numbers?");
+    var allowSpecialArray = confirm("Do you want it to include special characters?");*/
+    
+
+ 
 
 
 
@@ -66,17 +87,17 @@ if (allowSpecialArray){
     }
 }*/
 // the entry for word length must be between 8 and 120 characters
-    if (wordLength < 8 || wordLength > 120);
+    /*if (wordLength < 8 || wordLength > 120);
         alert("Pick a different number. Must be between 8 and 120.")
     }
+    else - const wordLength = finalWord.length
+  
     for (var i = 0 ; i <= wordLength; i++) {
         var finalLength = getRand(endArray);
         finalWord.push(finalLength);
-     }
-    
-     console.log(generatePassword);
+        return String.endArray
+     }  */
 
-     document.getElementById("finalWord").value=finalWord;
 // randomizing code block
 
 // the final password will be generated from a new array, based on the chosen criteria
