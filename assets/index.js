@@ -16,7 +16,7 @@ function generatePassword () {
 
     var wordLength = (parseInt(prompt("How long would you like the password to be? Enter in a number between 8 and 120.")) - 1);
     if (wordLength < 8 || wordLength > 120) {
-        alert("Uh-Oh! You didn't enter in a valid number, so you'll have to start over. Sorry!")
+        alert("Oh no! You didn't enter in a valid number, so you'll have to start over. Sorry!")
         return
     } else 
     if (allowUpperArray) {
