@@ -8,19 +8,21 @@
         <title>Password Generator</title>
     </head>
     <body>
-        <div class="container">
-            <nav class="navbar navbar-light bg-light">
+        <nav class="navbar navbar-light bg-light">
                 <a class="navbar-brand" href="index.html">
                   <img src="assets/favicon.png" width="30" height="30" class="d-inline-block align-top" alt="">
                   Stephanie Landgraf's Password Generator
                 </a>
-              </nav>
+        </nav>
+        <div class="container">
         <h1 class="display-1">Password Generator!</h1>
             <section>
                 <h3>Click the button to generate a unique password:</h3>
-                <button onclick="generatePassword()" type="button" class="btn btn-primary btn-lg">LET'S MAKE A PASSWORD</button>
-                <button onclick="clearTextArea()" type="button" class="btn btn-outline-secondary">Reset</button>
-                <textarea class="form-control" id="passwordDisplay"></textarea>
+                <div class="container-fluid">
+                    <button onclick="generatePassword()" type="button" class="btn btn-primary btn-lg">LET'S MAKE A PASSWORD</button>
+                    <button onclick="clearTextArea()" type="button" class="btn btn-outline-secondary">Reset</button>
+                    <textarea class="form-control" id="passwordDisplay"></textarea>
+                </div>
             </section>
         </div>
         <script src="assets/index.js">
