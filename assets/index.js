@@ -53,3 +53,8 @@ function generatePassword () {
 
     document.getElementById("passwordDisplay").value=finalWord;
 }
+
+function clearTextArea () {
+    document.getElementById("passwordDisplay").value="";
+
+}
