@@ -1,6 +1,10 @@
 # Password_Generator
 Homework Assignment Number 2
 
+Hi there! Thanks so much for taking a look at this second project of mine.
+
+Here, I made a password generator. You can click on the blue button to take you through a set of prompts, which will then display a randomly generated password! You can click reset to clear out the selection and start again.
+
 <!-- PSEUDOCODE -->
 1. CLick on button
 2. Button will trigger an alert
