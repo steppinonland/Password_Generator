@@ -1,6 +1,9 @@
 body {
     background-color: peachpuff;
 }
+.display-1 {
+    font-family: 'Lekton', sans-serif;
+}
 
 h1 {
     padding-top: 4%;
@@ -11,6 +14,7 @@ h1 {
 }
 
 h3 {
+    font-family: 'Tenor Sans', sans-serif;
     margin-top: 3%;
 }
 
